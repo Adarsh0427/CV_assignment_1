@@ -1,37 +1,59 @@
-Installing CV Assignment
-To install CV Assignment, follow these steps:
+# Computer Vision Assignment: Feature Detection and Matching
 
-Clone the repository:
-Copygit clone https://github.com/yourusername/cv-assignment.git
-Replace yourusername with your actual GitHub username if you've pushed this to your own repository.
-Navigate to the project directory:
-Copycd cv-assignment
+This project implements a computer vision pipeline for feature detection, description, and matching using Python. It includes implementations of Harris Corner Detection, SIFT-like feature description, and feature matching.
 
-(Optional) Create and activate a virtual environment:
-Copypython -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+## Prerequisites
 
-Install the required packages:
-Copypip install -r requirements.txt
+Before you begin, ensure you have met the following requirements:
 
+* Python 3.7 or later
+* pip (Python package installer)
+* Git (for cloning the repository)
 
-Using CV Assignment
-To use CV Assignment, follow these steps:
+## Installation
 
-Ensure you're in the project directory and your virtual environment is activated (if you're using one).
-Place your input images in the project directory. The code expects two images named image1.jpg and image2.jpg.
-Run the main script:
-Copypython main.py
+To set up the CV Assignment on your local machine, follow these steps:
 
-The script will generate two output images:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Adarsh0427/CV_assignment_1.git
+   cd CV_assignment_1
+   ```
 
-S20220010XYZ_FDDM_output1.jpg: Visualization of detected keypoints
-S20220010XYZ_FDDM_output2.jpg: Visualization of matched features
+2. (Optional) Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```
 
-Note: Replace "S20220010XYZ" with your actual roll number in the code before running.
+3. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Project Structure
-Copycv_assignment/
+## Usage
+
+1. Place your input images in the project root directory. The code expects two images named `image1.png` and `image2.png`.
+
+2. Run the main script:
+   ```bash
+   python main.py 
+   ```
+3. Run the main script (optional):
+   ```bash
+   python main.py <image1> <image2>
+   ```
+
+3. The script will generate two output images:
+   - `S20220010004_FDDM_output1.jpg`: Visualization of detected keypoints
+   - `S20220010004_FDDM_output2.jpg`: Visualization of matched features
+
+   Note: Replace "S20220010XYZ" in the code with your actual roll number before running.
+
+## Project Structure
+
+```
+cv-assignment/
 ├── main.py
 ├── requirements.txt
 ├── README.md
@@ -41,11 +63,11 @@ Copycv_assignment/
 │   ├── feature_descriptor.py
 │   ├── feature_matcher.py
 │   └── visualizer.py
+```
 
-main.py: The main script that orchestrates the computer vision pipeline
-modules/: A package containing the individual components of the pipeline
-
-keypoint_detector.py: Implements Harris Corner Detection
-feature_descriptor.py: Implements a SIFT-like feature descriptor
-feature_matcher.py: Implements feature matching
-visualizer.py: Provides visualization utilities
+- `main.py`: Orchestrates the computer vision pipeline
+- `modules/`: Package containing individual components
+  - `keypoint_detector.py`: Harris Corner Detection
+  - `feature_descriptor.py`: SIFT-like feature descriptor
+  - `feature_matcher.py`: Feature matching
+  - `visualizer.py`: Visualization utilities
