@@ -20,7 +20,7 @@ To set up the CV Assignment on your local machine, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Adarsh0427/CV_assignment_1.git
-   cd CV_assignment_1
+   cd S20220010004_FDDM
    ```
 
 2. Install the required packages:
