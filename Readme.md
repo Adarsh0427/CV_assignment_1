@@ -20,13 +20,7 @@ To set up the CV Assignment on your local machine, follow these steps:
    cd CV_assignment_1
    ```
 
-2. (Optional) Create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
-
-3. Install the required packages:
+2. Install the required packages:
    ```bash
    pip install -r requirements.txt
    ```
@@ -47,8 +41,6 @@ To set up the CV Assignment on your local machine, follow these steps:
 3. The script will generate two output images:
    - `S20220010004_FDDM_output1.jpg`: Visualization of detected keypoints
    - `S20220010004_FDDM_output2.jpg`: Visualization of matched features
-
-   Note: Replace "S20220010XYZ" in the code with your actual roll number before running.
 
 ## Project Structure
 
