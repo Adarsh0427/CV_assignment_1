@@ -1,3 +1,6 @@
+# Name : Adarsh Singh
+# Roll no. - S20220010004
+
 # Computer Vision Assignment: Feature Detection and Matching
 
 This project implements a computer vision pipeline for feature detection, description, and matching using Python. It includes implementations of Harris Corner Detection, SIFT-like feature description, and feature matching.
